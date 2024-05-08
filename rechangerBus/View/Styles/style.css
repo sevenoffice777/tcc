@@ -8,18 +8,18 @@
 }
 
 :root {
-    --font_text: "Montserrat", sans-serif; ;
-    --cor001:#2773a7;
-    --cor002:#37739b;
-    --cor003:#194868;
+    --font_text: "Montserrat", sans-serif;
+    --cor001: #2773a7;
+    --cor002: #37739b;
+    --cor003: #194868;
 }
 
 body {
     width: 100vw;
-    overflow-x: hidden;   
+    overflow-x: hidden;
 }
 
-.container_log {
+.container {
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(120deg, var(--cor001), var(--cor002), var(--cor003));
@@ -30,7 +30,74 @@ body {
     flex-direction: column;
 }
 
-.container_log #load_img {
+.log {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: 2s animateLogo ease-in-out;
+
+}
+
+@keyframes animateLogo {
+    0% {
+        transform: scale(0%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
+
+.log #load_img {
     width: 50px;
     filter: invert(100%);
+}
+
+.display_none {
+    display: none;
+}
+
+button {
+    font-weight: bolder;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: 0px;
+    background: var(--cor003);
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    filter: opacity(90%);
+    
+}
+
+nav.footNav {
+    width: 100vw;
+    height: 5%;
+    padding: 30px 0px;
+    background-color: var(--cor002);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 1px 1px 1px 6px var(--cor002);
+    left: 0;
+}
+
+.footNav ion-icon {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    transition: .5s;
+
+}
+
+.footNav ion-icon:hover {
+    transform: translateY(-10px) scale(1.1);
+    cursor: pointer;
 }

@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,16 +11,27 @@
     <link rel="stylesheet" href="rechangerBus/View/Styles/style.css">
     <title>Rechanger.Bus | Inicio </title>
 </head>
+
 <body>
-    <div class="contain display_none">
-        <div class="container_log">
+    <div class="container">
+        <div class="log">
             <img src="rechangerBus/Assets/logo_completa.png" id="logo_completa_img" alt="Logo Completa_img">
-            <img src="rechangerBus/Assets/load.gif" alt="load_img" id="load_img"">
+            <img src="rechangerBus/Assets/load.gif" alt="load_img" id="load_img">
+            <button class="display_none" id="btn_iniciar">COMEÇAR AGORA</button>
+        </div>
+
+        <div class="nav-contain display_none">
+            <nav class="footNav">
+                <ion-icon name="home-outline"></ion-icon>
+                <ion-icon name="card-outline"></ion-icon>
+                <ion-icon name="person-outline"></ion-icon>
+            </nav>
         </div>
     </div>
-    <div class="container">
 
-    </div>
-    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="rechangerBus/View/Scripts/main.js"></script>
 </body>
+
 </html>
