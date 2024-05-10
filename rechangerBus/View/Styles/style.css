@@ -5,6 +5,7 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: var(--font_text);
 }
 
 :root {
@@ -50,8 +51,12 @@ body {
     }
 }
 
+.log #logo_completa_img {
+    width: 300px;
+}
+
 .log #load_img {
-    width: 50px;
+    width: 25px;
     filter: invert(100%);
 }
 
@@ -100,4 +105,90 @@ nav.footNav {
 .footNav ion-icon:hover {
     transform: translateY(-10px) scale(1.1);
     cursor: pointer;
+}
+
+span#wave-animate {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 250px;
+    
+    background-color: rgb(11, 31, 70);
+    border-radius: 0 0 30px 30px;
+}
+
+.container .card {
+    z-index: 0;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;  
+
+}
+
+.card h1 {
+    margin: 20px;
+}
+.card #logo-card {
+    width: 80px;
+    height: 80px;
+
+}
+
+form {
+    width: 80%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    
+}
+
+form input {
+    padding: 10px 5px;
+    outline: none;
+    border-radius: 4px;
+    margin: 10px 0px;
+    border:1px solid rgba(2, 2, 2, 0.562);
+    background: none;
+
+}
+
+form input[type="submit"] {
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+    background-color: #194868;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--cor002);
+    cursor: pointer;
+}
+
+form label {
+    font-weight: bolder;
+}
+
+.marck {
+    display: block;
+    color: #194868;
+}
+
+#warning {
+    color: black;
+    font-size: 10pt;
+    padding: 5px;
+}
+
+#warning:hover {
+    color: #37739b;
+    cursor: pointer;
+    
 }

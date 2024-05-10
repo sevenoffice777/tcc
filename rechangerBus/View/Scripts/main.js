@@ -12,11 +12,7 @@ window.addEventListener("load", () => {
 })
 
 button_start.addEventListener("click", ()=>{
-    toggleClass(log, "display_none");
-    // Desaparece o log de carregamento
-
-    toggleClass(document.querySelector(".nav-contain"), "display_none");
-
+    window.location.href = "./rechangerBus/view/pages/login.php";
 })
     
 
