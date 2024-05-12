@@ -12,6 +12,5 @@ window.onload = () => {
 let btn_iniciar = document.querySelector("#btn-iniciar");
 
 btn_iniciar.onclick = () => {
-    // window.location.href = "./views/login.php";
-    alert("Hello")
+    window.location.href = "./views/login.php";
 }

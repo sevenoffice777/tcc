@@ -136,7 +136,7 @@ body {
   }
 
   .btn {
-    width: 250px;
+   
     padding: 15px;
     border-radius:10px;
     border: none;
@@ -149,3 +149,10 @@ body {
     background: var(--azul-claro);
     cursor: pointer;
   }
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background-image:linear-gradient(120deg, var(--azul-medio), var(--azul-escuro));
+    background-size: cover;
+}
