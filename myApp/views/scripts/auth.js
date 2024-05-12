@@ -8,3 +8,10 @@ window.onload = () => {
         }, 3000)
     }
 }
+
+let btn_iniciar = document.querySelector("#btn-iniciar");
+
+btn_iniciar.onclick = () => {
+    // window.location.href = "./views/login.php";
+    alert("Hello")
+}
