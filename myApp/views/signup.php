@@ -8,12 +8,13 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rechanger Bus - Log in</title>
+    <title>Rechanger Bus - Signup</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/general.css">
+    <!-- Style Log In/ Sign Up -->
     <link rel="stylesheet" href="./styles/login.css">
 </head>
 
@@ -24,15 +25,9 @@ session_start();
 
         <div class="card fl-ali-center-jus-spcArd fl-drct-clmn">
             <img src="../assets/logo.png" alt="Logo Da Rechanger Bus" id="logo-form">
-            <h1>Conecte-se com <span class="marck">Rechanger Bus</span></h1>
-            <form>
-                <label for="username">Usuario</label>
-                <input type="text" id="username" name="username">
-                <label for="password">Senha</label>
-                <input type="password" id="password" name="password" >
-                <input type="submit" id="btn_login" class="btn" placeholder="ENTRAR">
-            </form>
-            <a href="./signup.php">Não tem uma conta? Cadastre-se!</a>
+            <h1>Cadastre-se em <span class="marck">Rechanger Bus</span></h1>
+            <button class="btn">COMEÇAR</button>
+            <a href="./login.php">Já possui uma conta? Entrar!</a>
         </div>
     </div>
 

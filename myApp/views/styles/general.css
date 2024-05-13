@@ -156,3 +156,13 @@ body {
     background-image:linear-gradient(120deg, var(--azul-medio), var(--azul-escuro));
     background-size: cover;
 }
+
+a {
+  color: black;
+  font: 100 italic var(--font);
+  font-size: 10pt;
+}
+
+a:hover {
+  color: var(--azul-medio);
+}
