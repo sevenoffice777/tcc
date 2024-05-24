@@ -19,14 +19,13 @@ session_start();
 
 <body>
     <div class="container fl-ali-center-jus-center">
-        <div class="wave"></div>
-
+       
 
         <div class="card fl-ali-center-jus-spcArd fl-drct-clmn">
             <img src="../assets/logo.png" alt="Logo Da Rechanger Bus" id="logo-form">
             <h1>Conecte-se com <span class="marck">Rechanger Bus</span></h1>
             <form>
-                <label for="username">Usuario</label>
+                <label for="username">CPF</label>
                 <input type="text" id="username" name="username">
                 <label for="password">Senha</label>
                 <input type="password" id="password" name="password" >

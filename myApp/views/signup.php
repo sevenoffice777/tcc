@@ -20,8 +20,7 @@ session_start();
 
 <body>
     <div class="container fl-ali-center-jus-center">
-        <div class="wave"></div>
-
+        
 
         <div class="card fl-ali-center-jus-spcArd fl-drct-clmn">
             <img src="../assets/logo.png" alt="Logo Da Rechanger Bus" id="logo-form">
