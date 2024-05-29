@@ -25,7 +25,17 @@ session_start();
         <div class="card fl-ali-center-jus-spcArd fl-drct-clmn">
             <img src="../assets/logo.png" alt="Logo Da Rechanger Bus" id="logo-form">
             <h1>Cadastre-se em <span class="marck">Rechanger Bus</span></h1>
-            <button class="btn">COMEÇAR</button>
+            <form>
+                <label for="username">Nome de Usuario</label>
+                <input type="text">
+                <label for="cpf">CPF do Usuário</label>
+                <input type="text">
+                <label for="password">Senha</label>
+                <input type="password">
+                <label for="dt_nasc">Data De Nascimento</label>
+                <input type="date">
+                <input type="submit" value="Cadastrar"class="btn">
+            </form>
             <a href="./login.php">Já possui uma conta? Entrar!</a>
         </div>
     </div>

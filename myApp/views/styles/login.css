@@ -1,34 +1,43 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../assets/onibus_wallpaper.jpg);
+    background-color: rgba(0, 0, 0, 0.801);
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+
 .card {
-    width: 350px;
-    height: 500px;
-    padding: 10px;
-    background-color:  white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    padding: 20px;
+    background-color:  rgba(255, 255, 255, 0.158);
+    border: 1px solid white;
     border-radius: 10px;
     z-index: 999;
 }
 
+.card * {
+    color: white;
+}
 .card h1 {
     text-align: center;
-}
-
-.wave {
-    width: 100vw;
-    height: 250px;
-    background-color: #000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    border-radius: 0px 0px 50px 50px;
 }
 
 label {
     font-family: var(--font-marck);
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"],
+input[type="password"],
+input[type="date"] {
     border-width: 0px 0px 1px 1px;
-    border-color: black;
+    border-color: rgb(255, 255, 255);
     border-style: solid;
+    background: none;
     padding: 5px;
     width: 100%;
     height: 25px;
@@ -37,22 +46,23 @@ input[type="text"], input[type="password"] {
 }
 
 input[type="text"]:focus, input[type="password"]:focus {
-    border-width: 0px 0px 3px 3px;
+    border-width: 0px 0px 1px 3px;
+    
 }
 
 
 img#logo-form {
     width: 100px;
     height: 100px;
-    filter: invert(100%);
 
 }
 
 .marck {
-    color: var(--azul-claro);
+    color: rgb(204, 204, 204);
 }
 
 .btn {
+    background-color: var(--azul-claro);
     width: 100%;
     margin-top: 20px;
 }

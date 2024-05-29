@@ -5,155 +5,150 @@
 /* Reset Universal */
 
 * {
-    margin:0;
-    padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: var(--font);
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: var(--font);
 }
 
 /* Variaveis de Classe CSS */
 
 :root {
-    --font: "Open Sans", sans-serif;
-    --font-marck: "Poetsen One", sans-serif;
-    /* Azul */
-    --azul-claro: #4e8ef7;
-    --azul-medio: #357edd;
-    --azul-escuro: #1f4b99;
-  
-    /* Verde */
-    --verde-claro: #65c76c;
-    --verde-medio: #3fa34d;
-    --verde-escuro: #2a7a35;
-  
-    /* Cinza */
-    --cinza-claro: #f2f2f2;
-    --cinza-medio: #ccc;
-    --cinza-escuro: #333;
-  
-    /* Laranja */
-    --laranja-claro: #ff9f43;
-    --laranja-medio: #ff7f0e;
-    --laranja-escuro: #e86c00;
-  
-    /* Amarelo */
-    --amarelo-claro: #ffd166;
-    --amarelo-medio: #ffb700;
-    --amarelo-escuro: #cc8a00;
-  
-    /* Vermelho */
-    --vermelho-claro: #ff6b6b;
-    --vermelho-medio: #ff3333;
-    --vermelho-escuro: #cc0000;
-  
-    /* Roxo */
-    --roxo-claro: #b19cd9;
-    --roxo-medio: #9061c9;
-    --roxo-escuro: #6b37b6;
-  }
+  --font: "Open Sans", sans-serif;
+  --font-marck: "Poetsen One", sans-serif;
+  /* Azul */
+  --azul-claro: #4e8ef7;
+  --azul-medio: #357edd;
+  --azul-escuro: #1f4b99;
+
+  /* Verde */
+  --verde-claro: #65c76c;
+  --verde-medio: #3fa34d;
+  --verde-escuro: #2a7a35;
+
+  /* Cinza */
+  --cinza-claro: #f2f2f2;
+  --cinza-medio: #ccc;
+  --cinza-escuro: #333;
+
+  /* Laranja */
+  --laranja-claro: #ff9f43;
+  --laranja-medio: #ff7f0e;
+  --laranja-escuro: #e86c00;
+
+  /* Amarelo */
+  --amarelo-claro: #ffd166;
+  --amarelo-medio: #ffb700;
+  --amarelo-escuro: #cc8a00;
+
+  /* Vermelho */
+  --vermelho-claro: #ff6b6b;
+  --vermelho-medio: #ff3333;
+  --vermelho-escuro: #cc0000;
+
+  /* Roxo */
+  --roxo-claro: #b19cd9;
+  --roxo-medio: #9061c9;
+  --roxo-escuro: #6b37b6;
+}
 
 body {
-    width: 100vw;
-    height: 100%;
-    overflow-x: hidden;
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 /* Flex container com alinhamento de itens e justificação do conteúdo centralizados */
 .fl-ali-center-jus-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Flex container com alinhamento de itens centralizado e justificação do conteúdo à esquerda */
-  .fl-ali-center-jus-start {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  /* Flex container com alinhamento de itens centralizado e justificação do conteúdo à direita */
-  .fl-ali-center-jus-end {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  
-  /* Flex container com alinhamento de itens à esquerda e justificação do conteúdo centralizado */
-  .fl-ali-start-jus-center {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  
-  /* Flex container com alinhamento de itens à direita e justificação do conteúdo centralizado */
-  .fl-ali-end-jus-center {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-  }
-  
-  /* Flex container com alinhamento de itens à esquerda e justificação do conteúdo à esquerda */
-  .fl-ali-start-jus-start {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-  
-  /* Flex container com alinhamento de itens à direita e justificação do conteúdo à direita */
-  .fl-ali-end-jus-end {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-  
-  /* Flex container com alinhamento de itens e justificação do conteúdo centralizados e espaçamento uniforme entre os itens */
-.fl-ali-center-jus-spcBet {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  /* Flex container com alinhamento de itens centralizado, justificação do conteúdo à esquerda e espaçamento uniforme entre os itens */
-  .fl-ali-center-jus-spcEven {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  
-  /* Flex container com alinhamento de itens centralizado, justificação do conteúdo centralizado e espaçamento uniforme entre os itens */
-  .fl-ali-center-jus-spcArd {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  .fl-drct-clmn {
-    flex-direction: column;
-  }
-
-  .display-none {
-    display: none;
-  }
-
-  .btn {
-   
-    padding: 15px;
-    border-radius:10px;
-    border: none;
-    font-weight: bolder;
-    transition: .5s;
-  }
-
-  
-
-  .container {
-    width: 100vw;
-    height: 100vh;
-    background-image:linear-gradient(120deg, var(--azul-medio), var(--azul-escuro));
-    background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/* Flex container com alinhamento de itens centralizado e justificação do conteúdo à esquerda */
+.fl-ali-center-jus-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Flex container com alinhamento de itens centralizado e justificação do conteúdo à direita */
+.fl-ali-center-jus-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Flex container com alinhamento de itens à esquerda e justificação do conteúdo centralizado */
+.fl-ali-start-jus-center {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Flex container com alinhamento de itens à direita e justificação do conteúdo centralizado */
+.fl-ali-end-jus-center {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* Flex container com alinhamento de itens à esquerda e justificação do conteúdo à esquerda */
+.fl-ali-start-jus-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Flex container com alinhamento de itens à direita e justificação do conteúdo à direita */
+.fl-ali-end-jus-end {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/* Flex container com alinhamento de itens e justificação do conteúdo centralizados e espaçamento uniforme entre os itens */
+.fl-ali-center-jus-spcBet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Flex container com alinhamento de itens centralizado, justificação do conteúdo à esquerda e espaçamento uniforme entre os itens */
+.fl-ali-center-jus-spcEven {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Flex container com alinhamento de itens centralizado, justificação do conteúdo centralizado e espaçamento uniforme entre os itens */
+.fl-ali-center-jus-spcArd {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fl-drct-clmn {
+  flex-direction: column;
+}
+
+.display-none {
+  display: none;
+}
+
+.btn {
+
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bolder;
+  transition: .5s;
+}
+
+
+
+
 
 a {
   color: rgb(0, 0, 0);
@@ -162,5 +157,5 @@ a {
 }
 
 a:hover {
-  color: var(--azul-medio);
+  color: #9e9e9e;
 }
