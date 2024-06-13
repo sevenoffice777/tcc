@@ -14,8 +14,45 @@
 </head>
 
 <body>
+
+    <header>
+        <div class="box-logo">
+            <img src="../assets/logo_completa.png" alt="Logo da Rechanger Bus" class="logo">
+        </div>
+        <ion-icon name="menu-outline"></ion-icon>
+    </header>
     <div class="container">
-       
+        <section class="inicial-user">
+            <div class="left">
+                <h1>Recarregue Aqui</h1>
+                <div class="contain-cards">
+                    <div class="card">
+                        <img src="../assets/pix_icon.png" alt="Icone do PIX">
+                        <span>PIX</span>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/money_icon.png" alt="Icone do Dinheiro">
+                        <span>DINHEIRO</span>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/cartao.png" alt="Icone de Cartao">
+                        <span>CARTÃO</span>
+                    </div>
+                </div>
+                <form>
+                    <label for="horario">Horário</label>
+                    <input type="text" name="localtime" id="localtime-ipt">
+                    <label for="">Linha de Onibus</label>
+                    <input type="text" name="bus-line" id="bus-line-ipt">
+                </form>
+            </div>
+            <div class="right">
+                <div class="buscard">
+
+                </div>
+            </div>
+            <footer></footer>
+        </section>
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
