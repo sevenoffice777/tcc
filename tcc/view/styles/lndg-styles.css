@@ -23,10 +23,6 @@ body {
 nav {
     width: 100vw;
     padding: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
     background-color: #80bddb;
     display: flex;
     align-items: center;
@@ -62,7 +58,7 @@ a:hover {
 
 .container {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
 }
 
@@ -115,8 +111,8 @@ a:hover {
 
 .inicio .right img {
     margin-bottom: 60px;
-    width: 85%;
-    height: 60%;
+    width: 80%;
+    height: 70%;
 }
 
 
@@ -124,6 +120,7 @@ a:hover {
 /* Sobre */
 
 .sobre {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,4 +162,62 @@ a:hover {
 .texto p {
     width: 100%;
     font-size: 25pt;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100vw;
+    height: 400px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2e393f;
+}
+
+.section-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-footer *{ 
+    color: white;
+}
+
+.section-footer img {
+    width: 100px;
+    filter: invert(100%);
+}
+
+.section-footer button {
+    color: white;
+    width: 200px;
+    border-radius: 10px;
+    background: none;
+    border: 1px solid white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section-footer button ion-icon {
+    font-size: 15pt;
+    color: white;
+    font-weight: bold;
+}
+
+.section-footer button:hover {
+    background-color: #54a1c7;
+    border: 1px solid #54a1c7;
+    cursor: pointer;
+}
+
+.section-footer hr {
+    width: 200px;
 }
