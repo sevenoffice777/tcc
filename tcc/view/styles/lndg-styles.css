@@ -115,7 +115,7 @@ a:hover {
 
 .inicio .right img {
     margin-bottom: 60px;
-    width: 90%;
+    width: 85%;
     height: 60%;
 }
 
@@ -124,5 +124,45 @@ a:hover {
 /* Sobre */
 
 .sobre {
-    background-color: #80bddb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card  * {
+    color: white;
+}
+
+.card {
+    position: relative;
+    padding: 10px;
+    width: 80%;
+    height: 80%;
+    background-color: #54a1c7;
+    border-radius: 19px;
+}
+
+.card img {
+    width: 700px;
+    height: 600px;
+    position: absolute;
+    bottom: -50px;
+    right: -25px;
+
+}
+
+.texto {
+    margin: 5% 0% 0% 10% ;
+    width: 60%;
+    height: 70%;
+
+}
+
+.texto h1 {
+    font-size: 50pt;
+    margin-bottom: 20px;
+}
+.texto p {
+    width: 100%;
+    font-size: 25pt;
 }
