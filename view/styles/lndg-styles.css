@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    font-family: var(--font);
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+}
+
+:root {
+    --font: "Montserrat", sans-serif;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    padding: 10px;
+    z-index: 999;
+    background-color: #80bddb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    filter: invert(100%);
+    padding: 5px;
+    width: 90px;
+    height: 65px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+header a {
+    margin: 0px 20px;
+    border: 1px solid white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px 0px 10px 0px;
+    color: white;
+}
+
+header a:hover {
+    background-color: white;
+    color: rgba(0, 62, 104, 0.979);
+}
+
+/* Main */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.left,
+.right {
+    width: 50%;
+    height: 100%;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.left #mtg-title {
+    width: 100%;
+}
+
+
+.text {
+    width: 70%;
+}
+
+.text p {
+    width: 90%;
+    margin-left: 20px;
+    font-size: 15pt;
+}
+
+.text button {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    background: none;
+    margin: 20px;
+}
+
+.text button:hover {
+    background-color: #80bddb;
+    border: #80bddb;
+    color: white;
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.inicio .right img {
+    margin-bottom: 60px;
+    width: 80%;
+    height: 70%;
+}
+
+
+
+/* Sobre */
+
+.sobre {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card * {
+    color: white;
+}
+
+.card {
+    position: relative;
+    padding: 10px;
+    width: 80%;
+    height: 80%;
+    background-color: #54a1c7;
+    border-radius: 19px;
+}
+
+.card img {
+    width: 700px;
+    height: 600px;
+    position: absolute;
+    bottom: -50px;
+    right: -25px;
+
+}
+
+.texto {
+    margin: 5% 0% 0% 10%;
+    width: 60%;
+    height: 70%;
+
+}
+
+.texto h1 {
+    font-size: 50pt;
+    margin-bottom: 20px;
+}
+
+.texto p {
+    width: 100%;
+    font-size: 25pt;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100vw;
+    height: 400px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2e393f;
+}
+
+.section-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-footer * {
+    color: white;
+}
+
+.section-footer img {
+    width: 100px;
+    filter: invert(100%);
+}
+
+.section-footer a:hover {
+    font-weight: bold;
+}
+
+.section-footer button {
+    color: white;
+    width: 200px;
+    border-radius: 10px;
+    background: none;
+    border: 1px solid white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section-footer button ion-icon {
+    font-size: 15pt;
+    color: white;
+    font-weight: bold;
+}
+
+.section-footer button:hover {
+    background-color: #54a1c7;
+    border: 1px solid #54a1c7;
+    cursor: pointer;
+}
+
+.section-footer hr {
+    width: 200px;
+}
+
+
+
+@media (max-width: 700px) {
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 50px;
+    }
+
+    .section-footer {
+        padding: 10px;
+        margin-bottom: 30px;
+
+    }
+}
