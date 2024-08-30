@@ -21,6 +21,11 @@ body {
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
     width: 100vw;
     padding: 10px;
     background-color: #80bddb;
@@ -41,7 +46,7 @@ nav {
     height: 100%;
 }
 
-a {
+header a {
     margin: 0px 20px;
     border: 1px solid white;
     padding: 5px 10px 5px 10px;
@@ -49,7 +54,7 @@ a {
     color: white;
 }
 
-a:hover {
+header a:hover {
     background-color: white;
     color: rgba(0, 62, 104, 0.979);
 }
@@ -58,110 +63,68 @@ a:hover {
 
 .container {
     width: 100vw;
-    height: 80vh;
-    display: flex;
-}
-
-.left, .right {
-    width: 50%;
-    height: 100%;
-}
-
-.left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.left #mtg-title {
-    width: 100%;
-}
-
-
-.text {
-    width: 70%;
-}
-
-.text p {
-    width: 90%;
-    margin-left: 20px; 
-    font-size: 15pt;
-}
-.text button {
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    color: rgb(0, 0, 0);
-    background:none ;
-    margin: 20px;
-}
-
-.text button:hover {
-    background-color: #80bddb;
-    border: #80bddb;
-    color: white;
-    cursor: pointer;
-}
-
-.right {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-}
-
-.inicio .right img {
-    margin-bottom: 60px;
-    width: 80%;
-    height: 70%;
-}
-
-
-
-/* Sobre */
-
-.sobre {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.card  * {
+.inicio .left-bottom, .inicio .right-top {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio .left-bottom .text {
+    width: 70%;
+}
+
+.inicio .left-bottom img#mtg-title{
+    width: 500px;
+}
+.inicio .right-top img{
+    width: 600px;
+    height: 450px;
+}
+
+/* SOBRE */
+
+.sobre * {
     color: white;
 }
 
-.card {
-    position: relative;
-    padding: 10px;
+.sobre .card {
     width: 80%;
-    height: 80%;
-    background-color: #54a1c7;
-    border-radius: 19px;
+    height: 60%;
+    background-color: #80bddb;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.card img {
-    width: 700px;
-    height: 600px;
+.sobre .card #celular-mtg {
+    width: 350px;
+    height: 350px;
     position: absolute;
-    bottom: -50px;
-    right: -25px;
-
+    bottom: -40px;
+    right: 0;
 }
 
-.texto {
-    margin: 5% 0% 0% 10% ;
+.sobre .card .texto {
     width: 60%;
-    height: 70%;
-
 }
 
-.texto h1 {
-    font-size: 50pt;
+.sobre .card .texto h1 {
+    font-size: 30pt;
     margin-bottom: 20px;
 }
-.texto p {
-    width: 100%;
-    font-size: 25pt;
+
+.sobre .card .texto p {
+    font-size: 20pt;
 }
 
 /* FOOTER */
@@ -220,4 +183,79 @@ footer {
 
 .section-footer hr {
     width: 200px;
+}
+
+/* RESPONSIVTY */
+
+
+
+@media (max-width:1204px) {
+    .inicio {
+        margin-top:20%;
+        flex-direction: column-reverse;
+    }
+
+    .inicio .right-top, .inicio .left-bottom {
+        width: 100%;
+        height: 50%;
+    }
+
+    .inicio img#animate {
+        width: 550px;
+        height: 450px;
+    }
+
+    .inicio .left-bottom .text {
+        text-align: center;
+        margin-top: 10%;
+    }
+
+   
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        justify-content: space-between;
+        gap: 100px;
+        padding: 20px;
+    }
+}
+
+@media (max-width:900px) {
+    .inicio img#animate {
+        width: 450px;
+        height: 350px;
+    }  
+
+    .inicio .left-bottom img#mtg-title{
+        width: 350px;
+    }
+
+    .sobre .card {
+        width: 80%;
+        height: 80%;
+    }
+
+    .sobre .card #celular-mtg {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        bottom: -50px;
+        right: -30px;
+    }
+    
+    .sobre .card .texto {
+        width: 60%;
+    }
+    
+    .sobre .card .texto h1 {
+        font-size: 30pt;
+        margin-bottom: 20px;
+    }
+    
+    .sobre .card .texto p {
+        font-size: 15pt;
+    }
+
+
 }
