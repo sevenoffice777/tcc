@@ -1,0 +1,185 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.left, .right-none {
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   width: 50%;
+   height: 100%;
+}
+
+.left .login-card {
+    display: grid;
+    gap: 40px;
+}
+
+.login-card h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.inputs-prompt {
+    width: 300px;
+    outline: none;
+    border:none;
+    border-bottom: 1px solid black;
+}
+
+.right-none {
+    border-right: 1px solid black;
+}
+
+#sbmit-btn {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #0269ad;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+#lostPassword{
+    font-size: 12px;
+    text-align: right;
+    color: #001f33;
+}
+
+
+#toCreateAccount {
+    font-size: 13px;
+    text-align: center;
+}
+
+#toCreateAccount:hover, #lostPassword:hover, #sbmit-btn {
+    cursor: pointer;
+    text-shadow: 1px 0px black;
+}
+
+#sbmit-btn:hover{
+    background-color: #001f33;
+
+}
+.right-none {
+    border-left: 1px solid black ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;   
+}
+
+#onibus-canto {
+    position: absolute;
+    width: 650px;
+    bottom: -70px;
+    right: -90px;
+}
+
+.text {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#frase1-impacto {
+    text-align: right;
+    font-size: 25px;
+    font-weight:bolder ;
+    color: black;
+    display: block;
+}
+
+#frase2-impacto {
+    text-align: right;
+    width: 50%;
+    margin-right: -50px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #025085;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    margin-top:5% ;
+    width: 100vw;
+    height: 400px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2e393f;
+}
+
+.section-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-footer *{ 
+    color: white;
+}
+
+.section-footer img {
+    width: 100px;
+    filter: invert(100%);
+}
+
+.section-footer button {
+    color: white;
+    width: 200px;
+    border-radius: 10px;
+    background: none;
+    border: 1px solid white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section-footer button ion-icon {
+    font-size: 15pt;
+    color: white;
+    font-weight: bold;
+}
+
+.section-footer button:hover {
+    background-color: #54a1c7;
+    border: 1px solid #54a1c7;
+    cursor: pointer;
+}
+
+.section-footer hr {
+    width: 200px;
+}
+
+
+@media (max-width:1124px) {
+    
+    footer {
+        flex-direction: column;
+        height: auto;
+        justify-content: space-between;
+        gap: 100px;
+        padding: 20px;
+    }
+    .left {
+        width: 100%;
+    }
+    .right-none {
+        display: none;
+    }
+}
