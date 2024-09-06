@@ -37,14 +37,14 @@
                     O poder de se mover está em suas mãos
                 </span>
             </div>
-            <img src="../assets/onibus-img-canto.png" id="onibus-canto" alt="Imagem do Onibus no Canto do Site">
+            <img src="../assets/onibus.png" id="onibus-canto" alt="Imagem do Onibus no Canto do Site">
         </div>
     </div>
 
     <footer>
         <div class="section-footer">
             <img src="../assets/logo.png" alt="LOGO">
-            <button>Fale conosco <ion-icon name="mail-outline"></ion-icon></button>
+            <button>Fale conosco</button>
             
         </div>
         <div class="section-footer">

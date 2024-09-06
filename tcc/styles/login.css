@@ -73,8 +73,8 @@
 
 #onibus-canto {
     position: absolute;
-    width: 650px;
-    bottom: -70px;
+    width: 700px;
+    bottom: 0px;
     right: -90px;
 }
 
@@ -166,8 +166,16 @@ footer {
     width: 200px;
 }
 
+@media (max-width:1300px) {
+    #onibus-canto {
+       
+        width: 550px;
+       
+    }
+    
+}
 
-@media (max-width:1124px) {
+@media (max-width:1024px) {
     
     footer {
         flex-direction: column;
