@@ -25,7 +25,7 @@
                 <input type="password" name="password" id="password-inpt" class="inputs-prompt">
                 <span id="lostPassword">ESQUECEU A SENHA?</span>
                 <input type="submit" id="sbmit-btn">
-                <a href="./view/signup.php" id="toCreateAccount">NÃO TEM CONTA?</a>
+                <a href="./signup.php" id="toCreateAccount">NÃO TEM CONTA?</a>
             </div>
         </div>
         <div class="right-none">

@@ -18,6 +18,7 @@
 }
 
 .login-card h1 {
+    color: #54a1c7;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -35,7 +36,7 @@
 #sbmit-btn {
     width: 100%;
     border-radius: 10px;
-    background-color: #0269ad;
+    background-color: #54a1c7;
     border: none;
     color: white;
     padding: 10px 15px;
@@ -59,7 +60,7 @@
 }
 
 #sbmit-btn:hover{
-    background-color: #001f33;
+    background-color: #1b547a;
 
 }
 .right-none {

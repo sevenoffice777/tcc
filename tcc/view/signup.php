@@ -17,25 +17,25 @@
 <body>
     <div class="container">
     <div class="left">
+        <img src="../assets/anim-oni.png" alt="Animação Onibus" id="anim-oni">
+    </div>
+    <div class="right">
         <div class="signup-card">
             <h1>CRIAR CONTA</h1>
-            <span for="username">NOME</span>
+            <label for="username">NOME</label>
             <input type="text" id="username" class="input" name="username">
-            <span for="cpf">CPF</span>
+            <label for="cpf">CPF</label>
             <input type="text" id="cpf_user" class="input" name="cpf_user">
-            <span for="dt_nasct">DATA DE NASCIMENTO</span>
+            <label for="dt_nasct">DATA DE NASCIMENTO</label>
             <input type="date" id="dt_nasct" class="input" name="dt_nasct">
-            <span for="cell_user">TELEFONE</span>
+            <label for="cell_user">TELEFONE</label>
             <input type="text" id="cell_user" class="input"  name="cell_user">
-            <span for="email_user">EMAIL</span>
+            <label for="email_user">EMAIL</label>
             <input type="email" id="email_user" class="input" name="email_user">
-            <span for="password">SENHA</span>
+            <label for="password">SENHA</label>
             <input type="password" id="password_user" class="input"  name="password_user">
             <input type="submit">
         </div>
-    </div>
-    <div class="right-none">
-
     </div>
     </div>
 
