@@ -4,7 +4,17 @@
     display: flex;
 }
 
-.left,
+.left{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 33%;
+    height: 100%;
+    background-color: #54a1c7;
+    
+}
+
 .right {
     height: 100%;
     display: flex;
@@ -12,17 +22,14 @@
     justify-content: center;
 }
 
-.left {
-    width: 30%;
-    height: 100%;
-}
 .left img {
-    width: 100%;
-    height: 100%;
+    
+    width: 95%;
+    height: 100%;   
 }
 
 .right {
-    width: 70%;
+    width: 68%;
 }
 
 .right .signup-card {
@@ -44,12 +51,19 @@
     width: 150px;
     border:none;
     outline: none;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     margin-bottom: 5%;
     width: 100%;
 }
 
+#quest-log {
+    margin-top: 20px;
+    text-align: right;
+}
 
+#quest-log:hover {
+    color: #12435c;
+}
 
 .signup_card .input {
     width: 300px;

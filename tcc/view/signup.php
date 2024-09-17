@@ -17,7 +17,7 @@
 <body>
     <div class="container">
     <div class="left">
-        <img src="../assets/anim-oni.png" alt="Animação Onibus" id="anim-oni">
+        <img src="../assets/anim-oni.jpg" alt="Animação Onibus" id="anim-oni">
     </div>
     <div class="right">
         <div class="signup-card">
@@ -35,6 +35,7 @@
             <label for="password">SENHA</label>
             <input type="password" id="password_user" class="input"  name="password_user">
             <input type="submit">
+            <a href="./login.php" id="quest-log">Já tem uma conta?</a>
         </div>
     </div>
     </div>
@@ -48,10 +49,10 @@
         </div>
         <div class="section-footer">
             <h2>SEÇÕES</h2>
-            <a href="">Quem Somos</a>
-            <a href="">Nossos Serviços</a>
-            <a href="">Contato</a>
-            <a href="">Parcerias</a>
+            <a href="../../index.html#sobre">Quem Somos</a>
+            <a href="../../index.html#servicos">Nossos Serviços</a>
+            <a href="../../index.html#contato">Contato</a>
+            <a href="../../index.html#parcerias">Parcerias</a>
         </div>
         <div class="section-footer">
             <h2>SUPORTE</h2>
