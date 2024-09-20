@@ -14,14 +14,6 @@
     background-color: #54a1c7;
     
 }
-
-.right {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .left img {
     
     width: 95%;
@@ -30,15 +22,24 @@
 
 .right {
     width: 68%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.right .signup-card {
+
+.right form {
     width: 50%;
+}
+
+.right form {
+    
     display: grid;
     gap: 10px;
 }
 
-.signup-card h1 {
+form h1 {
     margin-bottom:5%;
     text-align: center;
     font-weight: bolder;
@@ -47,8 +48,8 @@
     
 }
 
-.signup-card .input {
-    width: 150px;
+form .input {
+    width: 100%;
     border:none;
     outline: none;
     border-bottom: 2px solid black;
@@ -73,17 +74,20 @@
 
 }
 
-.signup-card input[type="submit"] {
+form input[type="submit"] {
     width: 100%;
     border: 1px solid #54a1c7 ;
     color: white;
     border-radius: 5px;
     background-color: #54a1c7;
-    padding: 15px;    
+    padding: 15px;   
+    margin-bottom: 10px; 
 
 }
 
-.signup-card  input[type="submit"]:hover {
+
+
+form  input[type="submit"]:hover {
     background-color: #12435c;
     border: #12435c;
     cursor: pointer;
@@ -154,16 +158,25 @@ footer {
 }
 
 @media (max-width:1024px) {
+    
     .left {
         display: none;
     }
 
     .right {
+        margin: 0;
         width: 100%;
     }
 
-    .right .signup-card {
+    .right form {
+        gap: 0;
         width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input {
+        margin-top: 10px;
     }
 
     footer {

@@ -1,3 +1,6 @@
+input[type="text"], input[type="password"]{
+    color: black;
+}
 .container {
     width: 100vw;
     height: 100vh;
@@ -12,7 +15,7 @@
    height: 100%;
 }
 
-.left .login-card {
+.left form {
     display: grid;
     gap: 40px;
 }

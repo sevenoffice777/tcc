@@ -19,13 +19,15 @@
         <div class="left">
             <div class="login-card">
                 <h1>LOGIN</h1>
-                <label for="cpf_inpt">CPF</label>
-                <input type="number" name="cpf" id="cpf-inpt" class="inputs-prompt">
-                <label for="password_inpt">SENHA</label>
-                <input type="password" name="password" id="password-inpt" class="inputs-prompt">
-                <span id="lostPassword">ESQUECEU A SENHA?</span>
-                <input type="submit" id="sbmit-btn">
-                <a href="./signup.php" id="toCreateAccount">NÃO TEM CONTA?</a>
+                <form>
+                    <label for="cpf_inpt">CPF</label>
+                    <input type="text" name="cpf" id="cpf-inpt" class="inputs-prompt">
+                    <label for="password_inpt">SENHA</label>
+                    <input type="password" name="password" id="password-inpt" class="inputs-prompt">
+                    <span id="lostPassword">ESQUECEU A SENHA?</span>
+                    <input type="submit" id="sbmit-btn">
+                    <a href="./signup.php" id="toCreateAccount">NÃO TEM CONTA?</a>
+                </form>
             </div>
         </div>
         <div class="right-none">
@@ -67,6 +69,7 @@
 
         </div>
     </footer>
+    
 </body>
 
 </html>
