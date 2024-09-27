@@ -1,0 +1,162 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #12435c;
+    width: 100vw;
+    padding: 35px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 3% 3%;
+}
+
+header * {
+    color: white;
+}
+
+.saldo_box .txt_saldo {
+    font-size: 15pt;
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bolder;
+}
+
+ion-icon {
+    color: rgb(172, 172, 172);
+    font-size: 35px;
+    margin: 0px 20px;
+}
+
+ion-icon:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#reverse_icon:hover {
+    filter: invert(70%);
+    cursor: pointer;
+}
+
+#reverse_icon {
+    width: 15px;
+    filter: invert(100%);
+    margin-left: 5px;
+}
+
+/* main */
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.left,
+.right {
+    width: 50%;
+    height: 100%;
+
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right .contain_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    padding: 15px;
+    height: 300px;
+    background-color: rgba(0, 44, 126, 0.342);
+    border-radius: 10px;
+}
+
+.card {
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    background-color: white;
+}
+
+.contain_buttons {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.card_button:hover {
+    cursor: pointer;
+    background-color: #10648f;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+
+
+.txt_span {
+    font-size: 13pt;
+    text-align: left;
+    width: 50%;
+    font-weight: bolder;
+    margin: 25px;
+}
+
+.card_button {
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #12435c;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card_button * {
+    color: white;
+}
+
+.card_button img {
+    width: 50px;
+    filter: invert(100%);
+}
+
+.contain_inputs {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contain_inputs input {
+    width: 100%;
+    background-color: #12435c;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: none;
+    margin: 5% 0px;
+}
