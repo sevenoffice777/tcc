@@ -1,4 +1,4 @@
-const form = document.getElementById('create-account-form');
+const form = document.getElementById('verify-account-form');
 const endpoint = form.getAttribute('dataForm');
 
 form.addEventListener('submit', function (event) {
@@ -11,10 +11,12 @@ form.addEventListener('submit', function (event) {
     })
         .then(response => response.json())
         .then(data => {
-            if (data.success === true) {
-                // Redireciona para a página de login se a inserção for bem-sucedida
-                window.location.href = 'login.php'; // Substitua pelo caminho da sua página de login
-          }
+            if (data.success) {
+                // Redireciona para a página principal ou dashboard
+                window.location.href = './rechangerBus_main/main_page.php'; // Substitua pela sua página principal
+            } else {
+                alert("Usuario ou senha incorretos!")
+            }
         })
         .catch(error => console.error('Erro:', error));
 });
