@@ -35,11 +35,11 @@
                         <img src="../../assets/pix.png" alt="PIX IMAGEM">
                         <span class="txt_cards">PIX</span>
                     </div>
-                    <div class="card_button">
+                    <div class="card_button" id="card_cartao">
                         <img src="../../assets/cartao.png" alt="PIX IMAGEM">
                         <span class="txt_cards">CARTÃO</span>
                     </div>
-                    <div class="card_button">
+                    <div class="card_button" id="card_money">
                         <img src="../../assets/money.png" alt="MONEY IMAGEM">
                         <span class="txt_cards">DINHEIRO</span>
                     </div>
@@ -106,16 +106,17 @@
 
     <!-- Telas Extras -->
 
-    <div class="contain_bg_pix display_none">
-        <div class="bg_pix ">
-            <div class="card_pix">
-                <ion-icon name="close-outline" id="close_card_pix"></ion-icon>
+    <div class="contain_bg_PIX display_none">
+        <div class="bg ">
+            <div class="bg_card">
+                <ion-icon name="close-outline" id="close_card"></ion-icon>
                 <div class="left">
                     <h1>PIX</h1>
                     <div class="contain_dataPIX">
                         <span id="txt_pix">RECARGA</span>
                         <input type="number" id="valor_inpt">
-                        <button id="getKeyQR">GERAR CHAVE</button>
+                        <button id="getPix">GERAR PIX</button>
+                        
                     </div>
                 </div>
                 <div class="right">
@@ -124,17 +125,18 @@
             </div>
         </div>
    </div>
+  
 
 
     <script>
-        let close_card_pix = document.querySelector("#close_card_pix");
+        let close_card_pix = document.querySelector("#close_card");
 
         close_card_pix.addEventListener("click", ()=>{
-            toggleClass(document.querySelector(".contain_bg_pix"), "display_none");
+            toggleClass(document.querySelector(".contain_bg_PIX"), "display_none");
         })
 
         document.querySelector("#card_PIX").addEventListener("click", ()=>{
-            toggleClass(document.querySelector(".contain_bg_pix"), "display_none");
+            toggleClass(document.querySelector(".contain_bg_PIX"), "display_none");
         })
 
 

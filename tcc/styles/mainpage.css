@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     background-color: white;
-
+ 
 }
 
 header {
@@ -82,11 +82,6 @@ main {
     margin-bottom: 50px;
 }
 
-.card_button:hover {
-    cursor: pointer;
-    background-color: #10648f;
-    box-shadow: 1px 1px 5px 1px black;
-}
 
 
 
@@ -109,6 +104,11 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.card_button:hover {
+    cursor: pointer;
+    background-color: #022536;
 }
 
 .card_button * {
@@ -284,7 +284,110 @@ footer {
 }
 
 
+/* TELAS EXTRAS */
+
+/* TELA QRCODE - PIX */
+.display_none {
+    display: none;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.726);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.bg .bg_card {
+    width: 80%;
+    height: 90%;
+    background-color: #12435c;
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+
+}
+
+
+#close_card {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 20pt;
+}
+
+.bg .left, .bg .right {
+    width: 50%;
+    height: 100%;
+}
+
+
+
+.bg .left * {
+    color: white;
+}
+
+.contain_dataPIX {
+    display: grid;
+    gap: 30px;
+}
+
+
+#getPix {
+    width: 300px ;
+    padding: 15px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    font-weight: bolder;
+}
+
+#getPix:hover {
+    background-color: #0f8ece;
+    cursor: pointer;
+    color: white;
+}
+
+.bg .left h1 {
+    font-size: 50pt;
+    margin: 0px 0px 100px 0px;
+}
+
+.bg .contain_dataPIX #txt_pix {
+    font-size: 15pt;
+}
+
+.bg .left input {
+    width: 300px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+}   
+
+.bg .right img {
+    width: 100%;
+}
+
+
 @media (max-width:1024px) {
+    .bg .right {
+        display: none;
+    }
+
+
+    .bg .left {
+        width: 100%;
+    }
+
     .right .contain_card {
         background-color: white;
     }
@@ -312,97 +415,3 @@ footer {
         padding: 20px;
     }
 }
-
-/* TELAS EXTRAS */
-
-/* TELA QRCODE - PIX */
-.display_none {
-    display: none;
-}
-
-.bg_pix {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.726);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-}
-
-.bg_pix .card_pix {
-    width: 80%;
-    height: 90%;
-    background-color: #12435c;
-    border-radius: 20px;
-    display: flex;
-    position: relative;
-
-}
-
-
-#close_card_pix {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: white;
-    font-size: 20pt;
-}
-
-.bg_pix .left, .right {
-    width: 50%;
-    height: 100%;
-}
-
-
-
-.bg_pix .left * {
-    color: white;
-}
-
-.contain_dataPIX {
-    display: grid;
-    gap: 30px;
-}
-
-
-#getKeyQR {
-    width: 300px ;
-    padding: 15px;
-    border-radius: 100px;
-    background-color: #ffffff;
-    border: none;
-    color: black;
-    font-weight: bolder;
-}
-
-#getKeyQR:hover {
-    background-color: #0f8ece;
-    cursor: pointer;
-    color: white;
-}
-
-.bg_pix .left h1 {
-    font-size: 50pt;
-    margin: 0px 0px 100px 0px;
-}
-
-.bg_pix .contain_dataPIX #txt_pix {
-    font-size: 15pt;
-}
-
-.bg_pix .left input {
-    width: 300px;
-    background: none;
-    border: none;
-    border-bottom: 2px solid white;
-    outline: none;
-}   
-
-.bg_pix .right img {
-    width: 100%;
-}
-
