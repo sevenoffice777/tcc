@@ -19,13 +19,13 @@
         <div class="left">
             <div class="login-card">
                 <h1>LOGIN</h1>
-                <form>
+                <form id="verify-account-form" dataForm>
                     <label for="cpf_inpt">CPF</label>
                     <input type="text" name="cpf" id="cpf-inpt" class="inputs-prompt">
                     <label for="password_inpt">SENHA</label>
                     <input type="password" name="password" id="password-inpt" class="inputs-prompt">
                     <span id="lostPassword">ESQUECEU A SENHA?</span>
-                    <input type="submit" id="sbmit-btn">
+                    <button btn-sbmt id="btn-sbmt" name="btn-sbmt">Verificar Dados</button>
                     <a href="./signup.php" id="toCreateAccount">NÃO TEM CONTA?</a>
                 </form>
             </div>

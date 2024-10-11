@@ -16,13 +16,13 @@
 
 <body>
     <div class="container">
-    <div class="left">
-        <img src="../assets/anim-oni.jpg" alt="Animação Onibus" id="anim-oni">
-    </div>
-    <div class="right">
-        
-            <form>
-                <h1>CRIAR CONTA</h1>
+        <div class="left">
+            <img src="../assets/anim-oni.jpg" alt="Animação Onibus" id="anim-oni">
+        </div>
+        <div class="right">
+
+            <h1>CRIAR CONTA</h1>
+            <form id="create-account-form" dataForm="../controller/model/signup.php">
                 <label for="username">NOME</label>
                 <input type="text" id="username" class="input" name="username">
                 <label for="cpf">CPF</label>
@@ -30,16 +30,16 @@
                 <label for="dt_nasct">DATA DE NASCIMENTO</label>
                 <input type="date" id="dt_nasct" class="input" name="dt_nasct">
                 <label for="cell_user">TELEFONE</label>
-                <input type="text" id="cell_user" class="input"  name="cell_user">
+                <input type="text" id="cell_user" class="input" name="cell_user">
                 <label for="email_user">EMAIL</label>
                 <input type="email" id="email_user" class="input" name="email_user">
                 <label for="password">SENHA</label>
-                <input type="password" id="password_user" class="input"  name="password_user">
-                <input type="submit">
+                <input type="password" id="password_user" class="input" name="password_user">
+                <button btn-sbmt>Cadastre-se Aqui!</button>
                 <a href="./login.php" id="quest-log">Já tem uma conta?</a>
             </form>
-        
-    </div>
+
+        </div>
     </div>
 
 
@@ -69,6 +69,8 @@
 
         </div>
     </footer>
+
+    <script src="../controller/ajax_requests/signup.js"></script>
 </body>
 
 </html>

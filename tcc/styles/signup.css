@@ -11,12 +11,11 @@
     justify-content: flex-end;
     width: 33%;
     height: 100%;
-    background-color: #54a1c7;
     
 }
 .left img {
     
-    width: 95%;
+    width: 109%;
     height: 100%;   
 }
 
@@ -26,6 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -74,7 +74,7 @@ form .input {
 
 }
 
-form input[type="submit"] {
+button[btn-sbmt] {
     width: 100%;
     border: 1px solid #54a1c7 ;
     color: white;
@@ -87,7 +87,7 @@ form input[type="submit"] {
 
 
 
-form  input[type="submit"]:hover {
+button[btn-sbmt]:hover {
     background-color: #12435c;
     border: #12435c;
     cursor: pointer;

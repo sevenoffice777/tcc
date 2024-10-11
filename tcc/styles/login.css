@@ -36,7 +36,7 @@ input[type="text"], input[type="password"]{
     border-right: 1px solid black;
 }
 
-#sbmit-btn {
+#btn-sbmt {
     width: 100%;
     border-radius: 10px;
     background-color: #54a1c7;
@@ -57,12 +57,12 @@ input[type="text"], input[type="password"]{
     text-align: center;
 }
 
-#toCreateAccount:hover, #lostPassword:hover, #sbmit-btn {
+#toCreateAccount:hover, #lostPassword:hover, #btn-sbmt {
     cursor: pointer;
     text-shadow: 1px 0px black;
 }
 
-#sbmit-btn:hover{
+#btn-sbmt:hover{
     background-color: #1b547a;
 
 }
