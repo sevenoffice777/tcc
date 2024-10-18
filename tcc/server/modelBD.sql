@@ -1,4 +1,5 @@
 CREATE DATABASE rechangerBus;
+use rechangerBus;
 
 CREATE TABLE user (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -10,3 +11,5 @@ CREATE TABLE user (
     password_user VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+select * from user

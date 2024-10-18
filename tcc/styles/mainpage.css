@@ -315,7 +315,7 @@ footer {
 }
 
 
-#close_card {
+.close_card {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -334,13 +334,13 @@ footer {
     color: white;
 }
 
-.contain_dataPIX {
+.contain_data {
     display: grid;
     gap: 30px;
 }
 
 
-#getPix {
+#getTransaction {
     width: 300px ;
     padding: 15px;
     border-radius: 100px;
@@ -350,7 +350,7 @@ footer {
     font-weight: bolder;
 }
 
-#getPix:hover {
+#getTransaction:hover {
     background-color: #0f8ece;
     cursor: pointer;
     color: white;
@@ -361,7 +361,7 @@ footer {
     margin: 0px 0px 100px 0px;
 }
 
-.bg .contain_dataPIX #txt_pix {
+.bg .contain_data #txt_contain_data {
     font-size: 15pt;
 }
 
@@ -376,6 +376,78 @@ footer {
 .bg .right img {
     width: 100%;
 }
+
+
+/* Cartao */
+
+
+
+.bank-card {
+    background-color: #5e97bd; /* Azul ciano */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    margin-right: 20px;
+}
+
+
+
+.card-form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.card-form label {
+    margin: 10px 0 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+.card-form input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid  white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: none;
+    font-size: 14px;
+    color: white;
+}
+
+.card-form input::placeholder {
+    color: white;
+}
+
+.card-form input:focus {
+    outline: none;
+    
+}
+
+.card-form button {
+    padding: 10px;
+    background-color: #2c2c2c; /* Cinza claro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.card-form button:hover {
+    background-color: #444; /* Um tom mais escuro ao passar o mouse */
+}
+
+
+
+
+
+
+
+
 
 
 @media (max-width:1024px) {
