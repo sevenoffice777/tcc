@@ -141,7 +141,7 @@
                 </div>
                 <div class="right">
                     <div class="bank-card">
-                        
+
                         <form class="card-form">
                             <label for="name">Nome do Titular</label>
                             <input type="text" id="name" placeholder="Nome Completo" required>
@@ -156,25 +156,73 @@
                             <input type="text" id="cvv" placeholder="XXX" required>
 
                         </form>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="contain_bg display_none" id="card_money">
-        <div class="bg">
+        <div class="bg bg_recarga">
             <div class="bg_card">
                 <ion-icon name="close-outline" class="close_card"></ion-icon>
                 <div class="left">
                     <h1>Pontos de Recarga</h1>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8778.310163124954!2d-49.07783020156385!3d-22.322465772927398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf67babdf633db%3A0xf48c1eea36d8b9eb!2sTransurb%20Bauru!5e0!3m2!1spt-BR!2sbr!4v1729253357917!5m2!1spt-BR!2sbr"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="right">
-                    
+                    <div class="pontos_recarga">
+                        <p class="ponto">
+                            <span class="marck">Livraria Jalovi</span>
+                            Avenida Rodrigues Alves, 6-34; Centro;
+                            de segunda a sexta-feira das 08h30 às 11h00 e das 13h às 18 horas,
+                            aos sábados das 09h30 às 13h e das 14h às 17 horas
+
+
+
+
+                        </p>
+                        <p class="ponto">
+                            <span class="marck">Confiança Max</span>
+                            Avenida Getúlio Vargas, 3-30; Jardim Estoril
+                            de segunda a sexta-feira das 08h30 às 11h00 e das 12h30 às 18 horas,
+                            aos sábados das 09h00 às 13 horas.
+                        </p>
+                        <p class="ponto">
+                            <span class="marck">Empório Cultural ( Bauru Shopping)</span>
+                            R. Henrique Savi, 15-55; Jd.Planalto;
+                            de segunda a sexta-feira das 10h00 às 18h00 horas.
+                            aos sábados das 10 às 14h00 horas.
+
+
+
+                        </p>
+                        <p class="ponto">
+                            <span class="marck">Lanchonete Mister Mix</span>
+                            Av. Rodrigues Alves, 10-05; Centro;
+                            de segunda a sexta-feira das 6 às 17h30 horas.
+                            aos sábados das 6 às 12 horas
+                        </p>
+                        <p class="ponto">
+                            <span class="marck">Rede Inova Gasparini (Via Farma)</span>
+                            Rua dos Comérciarios, 3-98; Gasparini;
+                            de segunda a sexta das 8 às 18 horas
+                            Aos sábados 8 as 12:30
+
+
+
+
+                        </p>
+                        <p class="ponto">
+                            <span class="marck">Drogaria Farmais</span>
+                            Rua: Campos Salles, 7-40, Vila Falcão
+                            de segunda a sexta-feira, das 08:30 as 18 horas,
+                            aos sábados das 9h às 13horas.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -195,9 +243,9 @@
             });
         });
 
-        close_button.forEach((close_button) => {
-            close_button.addEventListener("click", () => {
-                let bg = document.getElementById(close_button.closest(".contain_bg").getAttribute("id"));
+        close_button.forEach((clos_button) => {
+            clos_button.addEventListener("click", () => {
+                let bg = document.getElementById(clos_button.closest(".contain_bg").getAttribute("id"));
                 toggleClass(bg, "display_none")
             });
         });
