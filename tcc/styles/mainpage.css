@@ -187,6 +187,7 @@ main {
 
 .cartao_onibus .header_card img {
     width: 70px;
+    height: 50px;
 
 }
 
@@ -199,16 +200,16 @@ main {
 }
 
 .photo_user {
-    width: 125px;
-    height: 150 px;
-    
+    width: 150px;
+    height: 150px;
     background-color: rgba(156, 156, 156, 0.329);
+    margin: 10px 0px 0px 10px;
 }
 
 .data_user {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap:10px;
 }
 
 .photo_user img {
@@ -218,12 +219,15 @@ main {
 #id_user, #nome_user, #rg_user {
     width: 250px;
     padding: 3px;
-    background-color: #5fcaff48;
+    text-align: right;
 }
 
-.marck {
+.marck_data {
+    text-align: right;
     font-weight: bold;
     font-size: 8pt;
+    color: black;
+    margin-bottom: 5px;
     display: block;
 }
 footer {
@@ -307,7 +311,7 @@ footer {
 .bg .bg_card {
     width: 80%;
     height: 90%;
-    background-color: #12435c;
+    background-color: #134d69;
     border-radius: 20px;
     display: flex;
     position: relative;
@@ -364,6 +368,10 @@ footer {
     margin: 0px 0px 100px 0px;
 }
 
+.bg_recarga .left h1 {
+    margin: 0;
+}
+
 .bg .contain_data #txt_contain_data {
     font-size: 15pt;
 }
@@ -390,6 +398,7 @@ footer {
     width: 500px;
     border-radius: 10px ;
     height: 500px;
+    margin-top: 50px;
 }
 
 .bg_recarga .pontos_recarga {
@@ -486,10 +495,6 @@ footer {
 
 
 @media (max-width:1024px) {
-    .bg .right {
-        display: none;
-    }
-
 
     .bg .left {
         width: 100%;
@@ -497,6 +502,19 @@ footer {
 
     .right .contain_card {
         background-color: white;
+    }
+
+    
+    .bg .right {
+        display: none;
+    }
+
+    .bg_recarga iframe {
+        width: 350px;
+        height: 250px;
+    }
+    .bg_recarga h1 {
+        text-align: center;
     }
 
     main {
