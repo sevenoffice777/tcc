@@ -68,7 +68,7 @@
 
                                 <span id="id_user"><span class="marck_data">Codigo Cartão:</span> 000000000</span>
                                 <span id="nome_user"><span class="marck_data">Nome usuário:</span> Samuel Seven</span>
-                                <span id="rg_user"><span class="marck_data">RG:</span> 00000000000</span>
+                                <span id="rg_user"><span class="marck_data">CPF:</span> 00000000000</span>
                             </div>
                         </div>
                     </div>

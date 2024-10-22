@@ -23,7 +23,10 @@
                     <label for="cpf_inpt">CPF</label>
                     <input type="text" name="cpf_user" id="cpf_user" class="inputs-prompt">
                     <label for="password_inpt">SENHA</label>
-                    <input type="password" name="password_user" id="password-inpt" class="inputs-prompt">
+                    <div class="password_inpt">
+                        <input type="password" name="password_user" id="password-inpt" class="inputs-prompt">
+                        <ion-icon name="eye-outline" id="hidden_password"></ion-icon>
+                    </div>
                     <span id="lostPassword">ESQUECEU A SENHA?</span>
                     <button btn-sbmt id="btn-sbmt" name="btn-sbmt">Verificar Dados</button>
                     <a href="./signup.php" id="toCreateAccount">NÃO TEM CONTA?</a>
@@ -47,7 +50,7 @@
         <div class="section-footer">
             <img src="../assets/logo.png" alt="LOGO">
             <button>Fale conosco</button>
-            
+
         </div>
         <div class="section-footer">
             <h2>SEÇÕES</h2>
@@ -58,9 +61,9 @@
         </div>
         <div class="section-footer">
             <h2>SUPORTE</h2>
-            <span class="info">Email:  rechangerbus@gmail.com</span>
-            <span class="info">Telefone:  +55 14 91000-9923</span>
-            <span class="info">CNPJ:  123141235124</span>
+            <span class="info">Email: rechangerbus@gmail.com</span>
+            <span class="info">Telefone: +55 14 91000-9923</span>
+            <span class="info">CNPJ: 123141235124</span>
         </div>
         <div class="section-footer">
             <h2>RECHANGER BUS</h2>
@@ -69,8 +72,24 @@
 
         </div>
     </footer>
-    
+
     <script src="../controller/ajax_requests/login.js"></script>
+
+    <script>
+        let isHid = false;
+        document.querySelector("#hidden_password").addEventListener("click", () => {
+            if (isHid == false) {
+                document.querySelector("#password-inpt").setAttribute("type", "text")
+                isHid = true;
+            } else {
+                document.querySelector("#password-inpt").setAttribute("type", "password")
+                isHid = false;
+            }
+
+        })
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

@@ -34,7 +34,10 @@
                 <label for="email_user">EMAIL</label>
                 <input type="email" id="email_user" class="input" name="email_user">
                 <label for="password">SENHA</label>
-                <input type="password" id="password_user" class="input" name="password_user">
+                <div class="password_inpt">
+                    <input type="password" id="password_user" class="input" name="password_user">
+                    <ion-icon name="eye-outline" id="hidden_password"></ion-icon>
+                </div>
                 <button btn-sbmt>Cadastre-se Aqui!</button>
                 <a href="./login.php" id="quest-log">Já tem uma conta?</a>
             </form>
@@ -70,7 +73,23 @@
         </div>
     </footer>
 
+    <script>
+        let isHid = false;
+        document.querySelector("#hidden_password").addEventListener("click", ()=> {
+            if(isHid == false) {
+                document.querySelector("#password_user").setAttribute("type", "text")
+                isHid = true;
+            } else {
+                document.querySelector("#password_user").setAttribute("type", "password")
+                isHid = false;
+            }
+
+        })
+    </script>
+
     <script src="../controller/ajax_requests/signup.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
