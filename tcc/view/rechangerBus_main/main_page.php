@@ -12,6 +12,8 @@
 
     <link rel="shortcut icon" href="../../assets/logo.png" type="image/x-icon">
 
+    
+
 </head>
 
 <body>
@@ -85,10 +87,10 @@
         </div>
         <div class="section-footer">
             <h2>SEÇÕES</h2>
-            <a href="">Quem Somos</a>
-            <a href="">Nossos Serviços</a>
-            <a href="">Contato</a>
-            <a href="">Parcerias</a>
+            <a href="../../../index.html#sobre">Quem Somos</a>
+            <a href="../../../index.html#servicos">Nossos Serviços</a>
+            <a href="../../../index.html#contato">Contato</a>
+            <a href="../../../index.html#parcerias">Parcerias</a>
         </div>
         <div class="section-footer">
             <h2>SUPORTE</h2>
@@ -261,6 +263,8 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="../../controller/ajax_requests/dataUser.js"></script>
 </body>
 
 </html>

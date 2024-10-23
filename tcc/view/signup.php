@@ -58,7 +58,7 @@
             <a href="../../index.html#servicos">Nossos Serviços</a>
             <a href="../../index.html#contato">Contato</a>
             <a href="../../index.html#parcerias">Parcerias</a>
-        </div>
+        </div> 
         <div class="section-footer">
             <h2>SUPORTE</h2>
             <span class="info">Email: rechangerbus@gmail.com</span>

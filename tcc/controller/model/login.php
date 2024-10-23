@@ -1,5 +1,6 @@
 <?php
 header('Content-Type: application/json');
+session_start();
 
 // Conexão com o banco de dados (ajuste conforme necessário)
 $servername = "localhost"; // ou seu servidor
@@ -23,7 +24,8 @@ if (isset($_POST["cpf_user"]) && isset($_POST["password_user"])) {
     
     $cpf_user = $_POST["cpf_user"];
     $password_user = $_POST["password_user"];
-    
+   
+
     // Prepare a instrução SQL para buscar o usuário
     $stmt = $conn->prepare("SELECT password_user FROM user WHERE cpf_user = ?");
     $stmt->bind_param("s", $cpf_user);
@@ -40,9 +42,11 @@ if (isset($_POST["cpf_user"]) && isset($_POST["password_user"])) {
         // Verifica a senha
         if (password_verify($password_user, $hashed_password)) {
             // Senha correta
+            $_SESSION["cpf"] = $cpf_user;
             $response = [
                 'success' => true,
                 'message' => 'Login bem-sucedido!'
+                
             ];
         } else {
             // Senha incorreta
