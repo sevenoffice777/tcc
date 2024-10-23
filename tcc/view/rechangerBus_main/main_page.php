@@ -68,9 +68,9 @@
                             </div>
                             <div class="data_user">
 
-                                <span id="id_user"><span class="marck_data">Codigo Cartão:</span> 000000000</span>
-                                <span id="nome_user"><span class="marck_data">Nome usuário:</span> Samuel Seven</span>
-                                <span id="rg_user"><span class="marck_data">CPF:</span> 00000000000</span>
+                                <span ><span class="marck_data">Codigo Cartão:</span> <span id="id_user">000000000</span></span>
+                                <span ><span class="marck_data">Nome usuário:</span> <span id="nome_user">Samuel Seven</span></span>
+                                <span ><span class="marck_data">CPF:</span> <span id="cpf_user">00000000000</span></span>
                             </div>
                         </div>
                     </div>
