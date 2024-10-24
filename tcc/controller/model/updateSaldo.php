@@ -30,13 +30,13 @@ if (!isset($_SESSION["cpf"])) {
 $cpf = $_SESSION["cpf"];
 
 // Atualiza o saldo no banco de dados
-$query = "UPDATE user SET saldo_user = ? WHERE cpf = ?";
+$query = "UPDATE user SET saldo_user = ? WHERE cpf_user = ?";
 $stmt = $conn->prepare($query);
 $stmt->bind_param("ds", $novoSaldo, $cpf);
 
 if ($stmt->execute()) {
     // Se a atualização for bem-sucedida, busca o novo saldo
-    $query = "SELECT saldo_user FROM user WHERE cpf = ?";
+    $query = "SELECT saldo_user FROM user WHERE cpf_user = ?";
     $stmt = $conn->prepare($query);
     $stmt->bind_param("s", $cpf);
     $stmt->execute();

@@ -17,13 +17,12 @@ document.querySelector("#getTransaction").addEventListener("click", () => {
         }
         return response.json();
     })
-    .then(data => {
-        // Aqui você recebe o novo saldo do banco de dados
-        let novoSaldo = parseFloat(data.novoSaldo.replace("R$", "").replace(",", ".").trim());
-        
-        // Atualiza o elemento na interface
-        document.querySelector("#saldo_log").textContent = `R$${novoSaldo.toFixed(2).replace(".", ",")}`;
-        
 
-    });
+    .then(data => {
+        alert("Recarga Realizada com Sucesso")
+        
+       window.location.reload(true)
+    })
+    
+    
 });

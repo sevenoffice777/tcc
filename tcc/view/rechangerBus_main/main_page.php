@@ -265,7 +265,8 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <script src="../../controller/ajax_requests/pixPay.js"></script>
+    <script src="../../controller/main.js"></script>
+    <script src="../../controller/ajax_requests/updateSaldo.js"></script>
     <script src="../../controller/ajax_requests/dataUser.js"></script>
 </body>
 
