@@ -26,8 +26,8 @@
 
             </div>
             <div class="user_box">
-                <ion-icon name="cog-outline"></ion-icon>
-                <ion-icon name="person-circle-outline"></ion-icon>
+                <ion-icon name="cog-outline" id="config_icon"></ion-icon>
+                <ion-icon name="person-circle-outline" id="profile_icon"></ion-icon>
             </div>
         </header>
         <main>
@@ -231,6 +231,15 @@
         </div>
     </div>
 
+    <!-- Delopping Card -->
+
+    <div class="bg_desenvolvimento_contain display_none">
+        <div class="bg_desenvolvimento">
+            <div class="em_desenvolvimento">
+                <img src="../../assets/imagens/em_desenvolvimento.gif" alt="EM DESENVOLVIMENTO (IMAGEM)">
+            </div>
+        </div>
+    </div>
 
 
     <script>
@@ -253,13 +262,7 @@
             });
         });
 
-        function toggleClass(classVerify, classRemove) {
-            if (classVerify.classList.contains(classRemove)) {
-                classVerify.classList.remove(classRemove);
-            } else {
-                classVerify.classList.add(classRemove);
-            }
-        }
+        
     </script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

@@ -21,3 +21,32 @@ document.querySelector("#reverse_icon").addEventListener("click", ()=> {
     }
 
 })
+
+
+// Logica das Paginas em DESENVOLVIMENTO
+
+document.querySelector("#config_icon").addEventListener("click", ()=> {
+    let contain_bg_desenvolvimento = document.querySelector(".bg_desenvolvimento_contain")
+    toggleClass(contain_bg_desenvolvimento, "display_none");
+
+    setTimeout(()=>{
+        toggleClass(contain_bg_desenvolvimento, "display_none");
+    }, 1500)
+})
+
+document.querySelector("#profile_icon").addEventListener("click", ()=> {
+    let contain_bg_desenvolvimento = document.querySelector(".bg_desenvolvimento_contain")
+    toggleClass(contain_bg_desenvolvimento, "display_none");
+
+    setTimeout(()=>{
+        toggleClass(contain_bg_desenvolvimento, "display_none");
+    }, 1500)
+})
+
+function toggleClass(classVerify, classRemove) {
+    if (classVerify.classList.contains(classRemove)) {
+        classVerify.classList.remove(classRemove);
+    } else {
+        classVerify.classList.add(classRemove);
+    }
+}

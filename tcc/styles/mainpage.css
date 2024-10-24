@@ -540,3 +540,33 @@ footer {
         padding: 20px;
     }
 }
+
+
+.bg_desenvolvimento{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.77);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.em_desenvolvimento {
+    
+    width: 650px;
+    height: 450px;
+    border-radius: 5px;
+    background: rgba(26, 25, 25, 0.251);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 5px solid black;
+}
+
+.em_desenvolvimento img {
+    width: 90%;
+}
