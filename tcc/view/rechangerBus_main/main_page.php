@@ -21,8 +21,9 @@
         <header>
             <div class="saldo_box">
                 <span class="txt_saldo">SALDO</span>
-                <span id="saldo_log">R$ 00,00 </span>
+                <span id="saldo_log"></span>
                 <img src="../../assets/reverse_icon.png" alt="Rerverse Icon" id="reverse_icon">
+
             </div>
             <div class="user_box">
                 <ion-icon name="cog-outline"></ion-icon>
@@ -117,7 +118,7 @@
                     <div class="contain_data">
                         <span id="txt_contain_data">RECARGA</span>
                         <input type="number" id="valor_inpt">
-                        <button id="getTransaction">GERAR PIX</button>
+                        <button id="getTransaction">EFETUAR RECARGA</button>
 
                     </div>
                 </div>
@@ -264,6 +265,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+    <script src="../../controller/ajax_requests/pixPay.js"></script>
     <script src="../../controller/ajax_requests/dataUser.js"></script>
 </body>
 

@@ -24,7 +24,7 @@ if ($conn->connect_error) {
 }
 
 // Prepara e executa a consulta
-$sql = "SELECT username, cpf_user, cartao FROM user WHERE cpf_user = ?";
+$sql = "SELECT username, cpf_user, cartao, saldo_user FROM user WHERE cpf_user = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("s", $cpf); // "s" significa que o parâmetro é uma string
 $stmt->execute();

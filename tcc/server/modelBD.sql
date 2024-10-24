@@ -7,6 +7,7 @@ CREATE TABLE user (
     cpf_user VARCHAR(11) NOT NULL UNIQUE,
     dt_nasct DATE NOT NULL,
     cartao VARCHAR(5),
+    saldo_user DECIMAL(10,2)
     cell_user VARCHAR(15) NOT NULL,
     email_user VARCHAR(100) NOT NULL UNIQUE,
     password_user VARCHAR(255) NOT NULL,
